@@ -1,57 +1,29 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#050607">
-<title>Zaki Services | Find it. Source it. Get it.</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#050607"><title>Zaki Services</title>
 <style>
-*{box-sizing:border-box}html,body{margin:0;background:#050607;color:#fff;font-family:Arial,Helvetica,sans-serif}button{font:inherit;color:inherit}.stage{position:relative;width:100%;min-height:100svh;background:#050607;overflow:hidden}.desktop{display:block;width:100%;height:auto}.base{display:block;width:100%;height:auto}.hero-window{position:absolute;z-index:4;left:0;right:0;top:6.6%;height:58.5%;overflow:hidden;pointer-events:none;background:#08090b}.hero-window img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;display:block;opacity:0;transition:opacity .18s ease}.hero-window img.show{opacity:1}.card-hotspot{position:absolute;z-index:10;top:72.1%;height:17.8%;cursor:pointer;border:1px solid transparent;border-radius:9px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;background:transparent}.card-hotspot:hover,.card-hotspot.active{border-color:rgba(255,107,0,.95);box-shadow:0 0 24px rgba(255,107,0,.25),inset 0 0 16px rgba(255,107,0,.05);transform:translateY(-2px)}.hot-g{left:10.1%;width:25.5%}.hot-p{left:38.1%;width:25.7%}.hot-a{left:66.1%;width:25.8%}.clean-left,.clean-right{position:absolute;z-index:8;top:45%;width:3.3%;height:9%;background:#08090b;pointer-events:none}.clean-left{left:0}.clean-right{right:0}.clean-label{position:absolute;z-index:8;left:0;bottom:14.1%;width:27%;height:3.5%;background:#08090b;pointer-events:none}.pointer-glow{position:fixed;z-index:30;width:18px;height:18px;border:1px solid rgba(255,107,0,.85);border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);box-shadow:0 0 14px rgba(255,107,0,.6),0 0 34px rgba(255,107,0,.15);opacity:0}.mobile{display:none}
+*{box-sizing:border-box}html,body{margin:0;background:#050607;color:#fff;font-family:Arial,Helvetica,sans-serif}body{overflow-x:hidden}.desktop{position:relative;width:100%;aspect-ratio:1536/1024;overflow:hidden;background:#050607}.desktop>.base{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}.hero-change{position:absolute;z-index:3;left:0;right:0;top:6.64%;height:58.1%;overflow:hidden;background:#08090b;display:none}.hero-change img{width:100%;height:100%;object-fit:cover;display:block}.hero-change.show{display:block}.card-hotspot{position:absolute;z-index:8;top:73.35%;height:16.35%;border:1px solid transparent;border-radius:10px;background:transparent;cursor:pointer;transition:.18s ease}.card-hotspot:hover,.card-hotspot.active{border-color:#ff6b00;box-shadow:0 0 25px rgba(255,107,0,.28),inset 0 0 18px rgba(255,107,0,.06);transform:translateY(-2px)}.hot-g{left:10.1%;width:26.5%}.hot-p{left:38.2%;width:26.4%}.hot-a{left:66.1%;width:26.4%}.stats-change{position:absolute;z-index:7;left:5.5%;right:5.5%;top:65.0%;height:6.2%;display:none;align-items:center;justify-content:space-around;background:rgba(5,6,7,.97);border-top:1px solid #222;border-bottom:1px solid #222}.stats-change.show{display:flex}.stat{width:16%;text-align:center;font-size:clamp(7px,.8vw,13px);line-height:1.15}.stat b{display:block;color:#fff;font-size:1.05em}.stat span{color:#aaa}.stat b:first-letter{color:#ff6b00}.pointer-glow{position:fixed;z-index:50;width:18px;height:18px;border:1px solid rgba(255,107,0,.9);border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);box-shadow:0 0 14px rgba(255,107,0,.6),0 0 30px rgba(255,107,0,.18);opacity:0}
+.mobile{display:none}
 @media(max-width:700px){
- body{overflow-x:hidden}.desktop{display:none}.mobile{display:block}.mobile-shell{min-height:100svh;padding-bottom:18px;background:#050607}.m-header{height:62px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;border-bottom:1px solid rgba(255,255,255,.12);background:rgba(5,6,7,.96);position:sticky;top:0;z-index:20}.logo{font-weight:900;letter-spacing:2px;font-size:20px;line-height:16px}.logo span{display:block;color:#ff6b00;font-size:8px;letter-spacing:3px;margin-top:3px}.menu{width:42px;height:38px;border:1px solid #333;border-radius:7px;background:#0c0e10;display:grid;place-items:center;font-size:22px}.m-copy{padding:20px 18px 10px}.eyebrow{font-size:10px;letter-spacing:2px;color:#ff6b00;font-weight:700}.m-copy h1{font-size:30px;line-height:1.02;margin:7px 0 5px}.m-copy h1 span{color:#ff6b00}.m-copy p{font-size:12px;line-height:1.45;color:#b9b9b9;margin:0;max-width:330px}.m-search{margin-top:14px;display:flex;height:44px}.m-search input{min-width:0;flex:1;background:#0c0e10;border:1px solid #333;color:#fff;padding:0 12px;border-radius:7px 0 0 7px;font-size:11px}.m-search button{width:48px;border:0;border-radius:0 7px 7px 0;background:#ff6b00;font-weight:800}.m-request{width:100%;height:40px;margin-top:9px;border:1px solid #ff6b00;border-radius:7px;background:transparent;font-weight:700;font-size:11px}.m-hero{margin:6px 10px 0;border-radius:10px;overflow:hidden;background:#08090b;aspect-ratio:1.5/1;position:relative}.m-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .18s ease}.m-hero img.show{opacity:1}.m-hero .gmobile{opacity:1}.m-dots{display:flex;gap:6px;justify-content:center;margin:8px 0}.m-dots i{width:22px;height:3px;background:#666;border-radius:2px}.m-dots i.active{background:#ff6b00}.m-cars{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;padding:0 10px}.m-card{border:1px solid #292d31;border-radius:8px;background:#0a0c0e;padding:5px;cursor:pointer;transition:.18s ease}.m-card.active,.m-card:hover{border-color:#ff6b00;box-shadow:0 0 16px rgba(255,107,0,.18)}.m-card img{width:100%;aspect-ratio:1.35/1;object-fit:cover;border-radius:5px;display:block}.m-card strong{display:block;font-size:9px;margin:6px 3px 2px}.m-card span{display:block;color:#ff6b00;font-size:8px;margin:0 3px 5px}.m-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin:13px 10px 0;padding-top:10px;border-top:1px solid #222}.m-trust div{font-size:8px;color:#999;text-align:center;line-height:1.25}.m-trust b{display:block;color:#fff;font-size:9px;margin-bottom:2px}.pointer-glow{display:none}
+ .desktop{display:none}.mobile{display:block}.mobile-shell{min-height:100svh;background:#050607;padding-bottom:20px}.m-head{height:62px;padding:0 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #24272a;position:sticky;top:0;z-index:20;background:#050607}.logo{font-size:21px;font-weight:900;letter-spacing:2px;line-height:15px}.logo small{display:block;color:#ff6b00;font-size:8px;letter-spacing:3px;margin-top:3px}.menu{width:42px;height:38px;background:#0b0d0f;border:1px solid #333;border-radius:7px;color:#fff;font-size:22px}.m-copy{padding:18px 16px 8px}.m-copy h1{font-size:29px;line-height:1;margin:0}.m-copy h1 span{color:#ff6b00}.m-copy p{font-size:12px;color:#aaa;line-height:1.4;margin:9px 0 0;max-width:330px}.m-hero{margin:8px 10px 0;position:relative;aspect-ratio:1536/595;border:1px solid #1f2326;border-radius:9px;overflow:hidden;background:#08090b}.m-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}.m-hero img.show{display:block}.m-cars{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;padding:10px}.m-card{min-width:0;background:#090b0d;border:1px solid #292d31;border-radius:8px;padding:5px;color:#fff;text-align:left}.m-card.active{border-color:#ff6b00;box-shadow:0 0 15px rgba(255,107,0,.18)}.m-card img{width:100%;aspect-ratio:1.45/1;object-fit:cover;border-radius:5px;display:block}.m-card b{display:block;font-size:9px;margin:5px 2px 0}.m-card span{display:block;color:#ff6b00;font-size:8px;margin:2px}.m-search{display:flex;height:42px;margin-top:13px}.m-search input{flex:1;min-width:0;background:#0c0e10;border:1px solid #333;color:#fff;padding:0 10px;font-size:11px;border-radius:7px 0 0 7px}.m-search button{width:45px;background:#ff6b00;border:0;border-radius:0 7px 7px 0}.m-request{width:100%;height:40px;margin-top:8px;background:transparent;color:#fff;border:1px solid #ff6b00;border-radius:7px;font-weight:700;font-size:11px}.m-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin:5px 10px 0;padding:12px 0;border-top:1px solid #222}.m-trust div{text-align:center;color:#888;font-size:8px}.m-trust b{display:block;color:#fff;font-size:8px;margin-bottom:2px}.pointer-glow{display:none}
 }
-</style>
-</head>
-<body>
-<div class="stage">
-  <div class="desktop">
-    <img class="base" src="base.webp" alt="Zaki Services automotive parts landing page">
-    <div class="hero-window" aria-live="polite">
-      <img id="porsche" src="porsche.webp" loading="lazy" alt="Porsche Cayenne technical parts breakdown">
-      <img id="audi" src="audi.webp" loading="lazy" alt="Audi Q8 technical parts breakdown">
-    </div>
-    <div class="clean-left"></div><div class="clean-right"></div><div class="clean-label"></div>
-    <button class="card-hotspot hot-g active" data-car="g" aria-label="Mercedes-Benz G-Class"></button>
-    <button class="card-hotspot hot-p" data-car="p" aria-label="Porsche Cayenne"></button>
-    <button class="card-hotspot hot-a" data-car="a" aria-label="Audi Q8"></button>
-  </div>
-
-  <div class="mobile mobile-shell">
-    <header class="m-header"><div class="logo">ZAKI<span>SERVICES</span></div><button class="menu" aria-label="Menu">☰</button></header>
-    <section class="m-copy"><div class="eyebrow">PREMIUM AUTOMOTIVE SOURCING</div><h1>HARD-TO-FIND<br><span>PARTS. WE FIND IT.</span></h1><p>Genuine, OEM and aftermarket parts for premium vehicles.</p><div class="m-search"><input aria-label="Search" placeholder="Search by part name or OEM number..."><button aria-label="Search">⌕</button></div><button class="m-request">REQUEST A PART ›</button></section>
-    <div class="m-hero"><img class="gmobile" src="gclass.webp" alt="Mercedes-Benz G-Class technical parts breakdown"><img id="mporsche" src="porsche.webp" loading="lazy" alt="Porsche Cayenne technical parts breakdown"><img id="maudi" src="audi.webp" loading="lazy" alt="Audi Q8 technical parts breakdown"></div>
-    <div class="m-dots"><i class="active" data-dot="g"></i><i data-dot="p"></i><i data-dot="a"></i></div>
-    <div class="m-cars">
-      <button class="m-card active" data-car="g"><img src="gclass.webp" alt="Mercedes-Benz G-Class"><strong>MERCEDES-BENZ</strong><span>G-CLASS</span></button>
-      <button class="m-card" data-car="p"><img src="porsche.webp" loading="lazy" alt="Porsche Cayenne"><strong>PORSCHE</strong><span>CAYENNE</span></button>
-      <button class="m-card" data-car="a"><img src="audi.webp" loading="lazy" alt="Audi Q8"><strong>AUDI</strong><span>Q8</span></button>
-    </div>
-    <div class="m-trust"><div><b>GENUINE & OEM</b>Authentic parts</div><div><b>WORLDWIDE SOURCING</b>We find what others can't</div><div><b>FAST DELIVERY</b>Safe & reliable shipping</div></div>
-  </div>
-  <div class="pointer-glow" id="glow"></div>
+</style></head><body>
+<div class="desktop" id="desktop">
+<img class="base" src="base.webp" alt="Zaki Services automotive parts landing page">
+<div class="hero-change" id="hero"><img id="heroImg" alt="Vehicle technical parts breakdown"></div>
+<div class="stats-change" id="stats"><div class="stat"><b id="s1">4.0L V8 TWIN-TURBO</b><span>Engine</span></div><div class="stat"><b id="s2">577 HP</b><span>Power</span></div><div class="stat"><b id="s3">850 NM</b><span>Torque</span></div><div class="stat"><b id="s4">0-100 KM/H</b><span id="s4b">4.5s</span></div><div class="stat"><b id="s5">4MATIC AWD</b><span>Drivetrain</span></div><div class="stat"><b id="s6">9-SPEED</b><span>Transmission</span></div></div>
+<button class="card-hotspot hot-g active" data-car="g" aria-label="Mercedes-Benz G-Class"></button><button class="card-hotspot hot-p" data-car="p" aria-label="Porsche Cayenne"></button><button class="card-hotspot hot-a" data-car="a" aria-label="Audi Q8"></button>
 </div>
+<div class="mobile mobile-shell">
+<header class="m-head"><div class="logo">ZAKI<small>SERVICES</small></div><button class="menu" aria-label="Menu">☰</button></header>
+<section class="m-copy"><h1>HARD-TO-FIND<br><span>PARTS. WE FIND IT.</span></h1><p>Genuine, OEM and aftermarket parts for premium vehicles.</p><div class="m-search"><input placeholder="Search by part name or OEM number..."><button>⌕</button></div><button class="m-request">REQUEST A PART ›</button></section>
+<div class="m-hero"><img id="mg" class="show" src="gclass.webp" alt="Mercedes G-Class technical breakdown"><img id="mp" src="porsche-hero.webp" alt="Porsche Cayenne technical breakdown"><img id="ma" src="audi-hero.webp" alt="Audi Q8 technical breakdown"></div>
+<div class="m-cars"><button class="m-card active" data-car="g"><img src="gclass.webp"><b>MERCEDES-BENZ</b><span>G-CLASS</span></button><button class="m-card" data-car="p"><img src="porsche-hero.webp"><b>PORSCHE</b><span>CAYENNE</span></button><button class="m-card" data-car="a"><img src="audi-hero.webp"><b>AUDI</b><span>Q8</span></button></div>
+<div class="m-trust"><div><b>GENUINE & OEM</b>Authentic parts</div><div><b>WORLDWIDE SOURCING</b>We find what others can't</div><div><b>FAST DELIVERY</b>Safe shipping</div></div>
+</div><div class="pointer-glow" id="glow"></div>
 <script>
-const porsche=document.getElementById('porsche'),audi=document.getElementById('audi'),cards=[...document.querySelectorAll('.desktop .card-hotspot')],mp=document.getElementById('mporsche'),ma=document.getElementById('maudi'),mCards=[...document.querySelectorAll('.m-card')],dots=[...document.querySelectorAll('.m-dots i')],glow=document.getElementById('glow');
-function selectCar(car){
- cards.forEach(c=>c.classList.toggle('active',c.dataset.car===car));
- mCards.forEach(c=>c.classList.toggle('active',c.dataset.car===car));
- dots.forEach(d=>d.classList.toggle('active',d.dataset.dot===car));
- if(porsche){porsche.classList.toggle('show',car==='p');audi.classList.toggle('show',car==='a')}
- if(mp){mp.classList.toggle('show',car==='p');ma.classList.toggle('show',car==='a')}
-}
-[...cards,...mCards].forEach(c=>c.addEventListener('click',()=>selectCar(c.dataset.car)));
-dots.forEach(d=>d.addEventListener('click',()=>selectCar(d.dataset.dot)));
-document.addEventListener('mousemove',e=>{if(glow){glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px';glow.style.opacity='1'}});
-</script>
-</body>
-</html>
+const data={g:{img:null,s:['4.0L V8 TWIN-TURBO','577 HP','850 NM','0-100 KM/H','4MATIC AWD','9-SPEED']},p:{img:'porsche-hero.webp',s:['4.0L V8 TWIN-TURBO','550 HP','770 NM','0-100 KM/H','AWD','8-SPEED']},a:{img:'audi-hero.webp',s:['3.0L V6 TFSI TURBO','335 HP','369 LB-FT','0-60 MPH','QUATTRO AWD','8-SPEED']}};
+const hero=document.getElementById('hero'),heroImg=document.getElementById('heroImg'),stats=document.getElementById('stats'),hot=[...document.querySelectorAll('.card-hotspot')],mc=[...document.querySelectorAll('.m-card')];
+function selectCar(c){hot.forEach(x=>x.classList.toggle('active',x.dataset.car===c));mc.forEach(x=>x.classList.toggle('active',x.dataset.car===c));if(c==='g'){hero.classList.remove('show');stats.classList.remove('show')}else{heroImg.src=data[c].img;hero.classList.add('show');data[c].s.forEach((v,i)=>document.getElementById('s'+(i+1)).textContent=v);stats.classList.add('show')}['mg','mp','ma'].forEach(id=>document.getElementById(id).classList.remove('show'));document.getElementById(c==='g'?'mg':c==='p'?'mp':'ma').classList.add('show')}
+[...hot,...mc].forEach(x=>x.addEventListener('click',()=>selectCar(x.dataset.car)));
+document.addEventListener('mousemove',e=>{const g=document.getElementById('glow');g.style.left=e.clientX+'px';g.style.top=e.clientY+'px';g.style.opacity='1'});
+</script></body></html>
